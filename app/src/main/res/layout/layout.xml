@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- FIRST HEADING -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Test Type"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgTestType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/rbBeforeTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Before test 500 hume/v"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:id="@+id/rbAfterTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="After test of 100 hume/v"
+                android:textSize="16sp"/>
+        </RadioGroup>
+
+        <!-- SECOND HEADING -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enter the parameters"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- INPUT FIELDS Grid/Form Style -->
+        <!-- Isolate Resistance Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Isolate Resistance Name:"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/etIsolateName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g., Sample Alpha"
+            android:inputType="text"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Vb Parameter -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vb Value:"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/etVb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter numeric value"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- V1 Parameter -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V1 Value:"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/etV1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter numeric value"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- V2 Parameter -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V2 Value:"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/etV2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter numeric value"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- V1' Parameter -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V1' (V1 Prime) Value:"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/etV1Prime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter numeric value"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- V2' Parameter -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V2' (V2 Prime) Value:"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/etV2Prime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter numeric value"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- ACTION BUTTON -->
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate IRM Formula"
+            android:backgroundTint="#007ACC"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="12dp"/>
+
+        <!-- RESULT DISPLAY -->
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+</ScrollView>
