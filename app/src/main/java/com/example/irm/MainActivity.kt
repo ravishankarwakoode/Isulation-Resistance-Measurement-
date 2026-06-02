@@ -224,9 +224,9 @@ fun IRMCalculator(modifier: Modifier = Modifier) {
         )
         Spacer(modifier = Modifier.height(8.dp))
 
-        ResultField("Isolate Resistance (Ω/v)", isolateResistance)
+        ResultField("Isolate Resistance (v)", isolateResistance)
         Spacer(modifier = Modifier.height(8.dp))
-        ResultField("Resistance (V)", resistanceResult)
+        ResultField("Resistance (Ω/V)", resistanceResult)
 
         Spacer(modifier = Modifier.height(24.dp))
 
@@ -375,12 +375,6 @@ fun ResultField(label: String, value: String) {
         label = { Text(label) },
         readOnly = true,
         modifier = Modifier.fillMaxWidth(),
-        shape = RoundedCornerShape(12.dp),
-        colors = OutlinedTextFieldDefaults.colors(
-            focusedBorderColor = MaterialTheme.colorScheme.outline,
-            unfocusedBorderColor = MaterialTheme.colorScheme.outline,
-            focusedContainerColor = Color(0xFFF9F9F9),
-            unfocusedContainerColor = Color(0xFFF9F9F9)
-        )
+        shape = RoundedCornerShape(12.dp)
     )
 }
