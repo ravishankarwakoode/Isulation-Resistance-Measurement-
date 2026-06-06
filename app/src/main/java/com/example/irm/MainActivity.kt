@@ -228,6 +228,7 @@ fun IRMCalculator(modifier: Modifier = Modifier) {
         Spacer(modifier = Modifier.height(8.dp))
         ResultField("Resistance (Ω/V)", resistanceResult)
 
+
         Spacer(modifier = Modifier.height(24.dp))
 
         if (errorMessage.isNotEmpty()) {

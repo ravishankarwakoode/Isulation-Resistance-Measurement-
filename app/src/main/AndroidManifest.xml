@@ -6,7 +6,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
+        android:supportsRtl="true"2wqsz
         android:theme="@style/Theme.IRM">
         <activity
             android:name=".MainActivity"
@@ -14,7 +14,12 @@
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:configChanges="orientation|screenSize"
-            android:theme="@style/Theme.IRM">
+<Question ID="1" Shortcut="Q1" Order="" ElementType="question" QuestionType="numeric" Anonymity="1" AllowDK="1" Decimals="0" Translated="0" >
+<LongCaption></LongCaption>
+<Routings>
+</Routings>
+</Question>
+android:theme="@style/Theme.IRM">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
